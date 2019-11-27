@@ -128,7 +128,6 @@ void List<T>::pop_back()
 		temp_ptr->prev_node = nullptr;
 		temp_ptr->next_node = nullptr;
 		delete temp_ptr;
-		size--;
 	}
 }
 
@@ -141,6 +140,5 @@ void List<T>::pop_front()
 		this->begin = temp_ptr->next_node;
 		temp_ptr->next_node = nullptr;
 		delete temp_ptr;
-		size--;
 	}
 }
