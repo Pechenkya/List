@@ -407,3 +407,4 @@ void List<T>::emplace(List<T>::ListItr pos, Args && ...args)
 		this->lbegin->prev_node = nullptr;
 	}
 }
+
